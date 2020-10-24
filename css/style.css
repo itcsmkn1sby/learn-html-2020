@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    background-color: #f4f7f9;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+/* Sidebar Section */
+.sidebar {
+    order: 1;
+    width: 20%;
+    height: 100vh;
+    background-color: white;
+}
+
+.sidebar-container {
+    padding: 40px 0px 0px 24px;
+}
+
+.sidebar-container img {
+    width: 45px;
+    border-radius: 99px;
+}
+
+.sidebar-container .date {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.sidebar-container .time {
+    font-size: 11px;
+    margin-top: 1px;
+    color: #8497a4;
+}
+
+.menu {
+    margin-top: 40px;
+}
+
+.menu ul {
+    padding-left: 0px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 15px 0px;
+}
+
+.menu ul li a {
+    color: #6c8393;
+    text-decoration: none;
+    padding: 5px 0px;
+    transition: ease-in-out 0.3s;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu ul li a i {
+    margin-right: 12px;
+}
+
+.menu ul li a:hover {
+    color: black;
+    transition: ease-in-out 0.3s;
+}
+
+.menu ul li a.active {
+    color: black;
+}
+
+/* END Sidebar Section */
+
+.main {
+    order: 2;
+    width: 80%;
+}
+
+/* Navbar Section */
+.navbar {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+}
+
+.hello {
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.hello span {
+    color: #788d9b;
+}
+
+.search-box {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.input-search {
+    background-color: #f2f4f8;
+    padding: 7px 13px;
+    font-size: 10px;
+    border: none;
+    color: #8fa0ae;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-box button {
+    padding: 6px 10px;
+    border: none;
+    background: #5a7aff;
+    color: #f5f7ff;
+    border-radius: 4px;
+    margin-left: -10px;
+    transition: ease-in-out 0.3s;
+
+}
+
+.search-box button i {
+    font-size: 15px;
+
+}
+
+.search-box button:hover {
+    cursor: pointer;
+    background: #3b51ab;
+    transition: ease-in-out 0.3s;
+}
+
+/* END Navbar Section */
+
+.content-container {
+    width: calc(100% - 60px);
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.lg-card {
+    width: calc(60% - 12px);
+    margin: 0px 6px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.card-container {
+    padding: 8px 8px 5px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.lg-card .image {
+    width: 50%;
+}
+
+.lg-card .image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.lg-card .card-body {
+    width: 50%;
+}
+
+.card-body-container {
+    margin-left:12px;
+}
+
+.lg-card .card-body img {
+    width: 30px;
+    border-radius: 99px;
+    height: 30px;
+    align-items: center;
+}
+
+.text-header {
+    font-size: 9px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    color: #6c8393;
+}
+
+.card-body h4 {
+    font-size: 15px;
+    margin-top: 4px;
+    margin-bottom: 13px;
+}
+
+.card-author {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.card-body h6 {
+    font-size: 9px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    align-items: center;
+}
+
+.author-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .date {
+    font-size: 9px;
+    margin-top: 1px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    align-items: center;
+    color: #6c8393;
+}
+
+.sm-card {
+    display: flex;
+    flex-direction: row;
+    width: calc(40% - 12px);
+    margin: 0px 6px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.sm-card .card-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.city {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.sm-card h6 {
+    margin: 4px 0px;
+    font-size: 30px;
+}
+
+.weather-desc {
+    font-size: 12px;
+    color: #6c8393;
+    margin: 0px;
+}
